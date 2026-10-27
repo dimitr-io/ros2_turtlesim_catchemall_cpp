@@ -1,0 +1,6 @@
+# Custom service: take position (x,y) and return TurtleInfo of turtle closest to that position.
+float64 x
+float64 y
+---
+TurtleInfo closest_turtle
+bool success

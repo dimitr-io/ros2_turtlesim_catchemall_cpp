@@ -1,0 +1,14 @@
+/turtle_controller:
+  ros__parameters:
+    my_turtle_ctrl_freq_hz: 100.0 # how often to update my_turtle control command
+    heading_kp: 10.0 # proportional gain for tracking of desired heading
+    heading_ki: 1.0 # integral gain for tracking of desired heading
+    my_turtle_init_velocity: 3.0
+    my_turtle_max_velocity: 15.0
+    my_turtle_velocity_increment: 0.2 # how much turtle velocity increases for each turtle caught
+    my_turtle_min_velocity: 3.0 # velocity to use when very near a target, to prevent missing it
+    my_turtle_distance_low_threshold: 1.0 # distance below which target is considered to be "very near"
+
+/turtle_spawner:
+  ros__parameters:
+    spawn_timer_period_sec: 0.5 # timer period for spawning a new turtle

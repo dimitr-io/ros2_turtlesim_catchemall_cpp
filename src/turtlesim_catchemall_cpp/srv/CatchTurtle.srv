@@ -1,0 +1,3 @@
+string name # name of turtle caught
+---
+bool success # turtle killed success?

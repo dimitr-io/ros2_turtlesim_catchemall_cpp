@@ -1,0 +1,9 @@
+<launch>
+    <node pkg="turtlesim" exec="turtlesim_node"/>
+    <node pkg="turtlesim_catchemall_cpp" exec="turtle_spawner">
+        <param from="$(find-pkg-share turtlesim_catchemall_cpp)/config/turtle_catchemall.yaml" />
+    </node>
+    <node pkg="turtlesim_catchemall_cpp" exec="turtle_controller">
+        <param from="$(find-pkg-share turtlesim_catchemall_cpp)/config/turtle_catchemall.yaml" />
+    </node>
+</launch>
